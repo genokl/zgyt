@@ -20,10 +20,12 @@ function currentProductTypeName(){
 	return $("#titlelist li.current a").html();
 }
 
+/**
+ * 详情banner图片
+ */
 function setSynoBannerImg(type_id){
 	var res=""
 	if(type_id==1){//公司概况
-		///zgytimg/upload/20190810/1565439558404.jpg
 		res= "/zgytimg/banner/company_situation.jpg";
 	}else if(type_id==4){//公司产品
 		res= "/zgytimg/banner/productbanner.jpg";
@@ -39,44 +41,28 @@ function setSynoBannerImg(type_id){
 	return res;
 }
 
-
 /**
- * 弹出层
+ * 详情banner图片
  */
-function myDialog(){
-	var tipModal = "<div id='tipModal' class='modal fade bs-example-modal-sm' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel'>"
-			+ "		<div class='modal-dialog modal-sm'>"
-			+ "			<div class='modal-content'>"
-	        + "				<div class='modal-body'></div>"
-	        + "			</div>"
-	        + "		</div>"
-	        + "</div>";
-	var loadModal = "<div id='loadModal' class='modal fade bs-example-modal-sm' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel'>"
-		+ "		<div class='modal-dialog modal-sm'>"
-		+ "			<div class='modal-content'>"
-		+ "				<div class='modal-body'></div>"
-		+ "			</div>"
-		+ "		</div>"
-		+ "</div>";
-	var msgModal = "<div class='modal fade' id='msgModal' tabindex='-1' role='dialog'  aria-hidden='true'>"
-				 + "	<div class='modal-dialog'>"
-				 + "		<div class='modal-content'>"
-				 + "			<div class='modal-header'>"
-				 + "				<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>"
-				 + "				<h4 class='modal-title'>提示框</h4>"
-				 + " 			</div>"
-			     + "			<div class='modal-body'></div>"
-			     + "			<div class='modal-footer'>"
-			     + "			   <button type='button' class='btn btn-default' data-dismiss='modal'>关闭</button>"
-			     + "   			   <button type='button' class='btn btn-primary'>提交</button>"
-			     + "			</div>"
-			     + "		</div>"
-			     + "	</div>"
-			     + "</div>";
-	$("body").append(msgModal);
-	$("body").append(tipModal);
-	$("body").append(loadModal);
-}
+//function setSynoBannerImg(type_id){
+//	var res=""
+//		if(type_id==1){//公司概况
+//			res= "/zgytimg/banner/company_situation.jpg";
+//		}else if(type_id==4){//公司产品
+//			res= "/zgytimg/banner/productbanner.jpg";
+//		}else if(type_id==5){//科研技术
+//			res= "/zgytimg/banner/techbanner.jpg";
+//		}else if(type_id==6){//人力资源
+//			res= "/zgytimg/banner/hr_banner.jpg";
+//		}else if(type_id==3){//新闻中心
+//			res= "/zgytimg/banner/newsbanner.jpg";
+//		}else if(type_id==2){//联系我们
+//			res= "/zgytimg/banner/contactus.jpg";
+//		}
+//	return res;
+//}
+
+
 function getUrlArgObject(key){  
     var args=new Object();  
     var query=location.search.substring(1);//获取查询串  

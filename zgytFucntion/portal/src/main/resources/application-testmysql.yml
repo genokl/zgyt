@@ -16,7 +16,7 @@ spring:
       # 响应页面默认后缀
       suffix: .jsp
   application:
-    name: console
+    name: portal
     changeLogBasePath: C:/Users/epc-624/Desktop/sqlFile
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -24,7 +24,6 @@ spring:
     password: admin123sw21321
     url: jdbc:mysql://${server.mysql.host}:${server.mysql.port}/zgytDBS?characterEncoding=UTF-8&useSSL=true
  
-    
     tomcat:
       initial-size: 1   #初始化连接大小
       min-idle: 1   #最小连接池数量
@@ -46,7 +45,7 @@ spring:
       
 #设置log文件输出地址      
 logging:
-      path: F:/mygit/zgytpic/spring   
+#      path: F:/mygit/zgytpic/spring   
 #      file: F:/mygit/zgytpic/spring/springbootdemo.log
     
 
