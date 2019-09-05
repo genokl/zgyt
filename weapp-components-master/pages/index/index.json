@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "mybgm": "../../components/bgmPlayer/index"
+  }
+}
